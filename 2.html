@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Dashboard - Creatify</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .upload-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border: 1px solid #e1e1e1;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .upload-section h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .upload-btn {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            background-color: #0070f3;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .upload-btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Creator Dashboard</h1>
+        </header>
+
+        <main class="main">
+            <section class="upload-section">
+                <h2>Upload New Content</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="content-title">Content Title</label>
+                        <input type="text" id="content-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content-type">Content Type</label>
+                        <select id="content-type">
+                            <option value="video">Video</option>
+                            <option value="music">Music</option>
+                            <option value="article">Article</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price (ETH)</label>
+                        <input type="number" id="price" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content-file">Content File</label>
+                        <input type="file" id="content-file" required>
+                    </div>
+                    <button type="submit" class="upload-btn">Upload & Mint NFT</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

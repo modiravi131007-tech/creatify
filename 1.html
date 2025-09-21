@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatify - Decentralized Content</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid #eaeaea;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .connect-btn, .buy-btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background-color: #0070f3;
+            color: white;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .connect-btn:hover, .buy-btn:hover {
+            background-color: #005bb5;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .content-card {
+            background-color: white;
+            border: 1px solid #e1e1e1;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .content-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .content-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Creatify</h1>
+            <button class="connect-btn">Connect Wallet</button>
+        </header>
+
+        <main class="main">
+            <h2 class="section-title">Latest Content</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>My First NFT Video</h3>
+                    <p>Creator: 0xabc...123</p>
+                    <p>Price: 0.5 ETH</p>
+                    <button class="buy-btn">View/Buy</button>
+                </div>
+                <div class="content-card">
+                    <h3>Exclusive Song for Subscribers</h3>
+                    <p>Creator: 0xdef...456</p>
+                    <p>Price: Subscription</p>
+                    <button class="buy-btn">View/Buy</button>
+                </div>
+                <div class="content-card">
+                    <h3>Article on Web3</h3>
+                    <p>Creator: 0xghi...789</p>
+                    <p>Price: 0.1 ETH</p>
+                    <button class="buy-btn">View/Buy</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

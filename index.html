@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatifyText dApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CreatifyText Dapp ✍️</h1>
+        <button id="connectButton">Connect Wallet</button>
+        <p id="walletAddress"></p>
+
+        <hr>
+
+        <div class="post-section">
+            <h2>Create a New Post</h2>
+            <textarea id="postContent" placeholder="What's on your mind?" rows="4" cols="50"></textarea>
+            <button id="submitPostButton" disabled>Post</button>
+        </div>
+
+        <hr>
+
+        <div class="feed-section">
+            <h2>Recent Posts</h2>
+            <div id="postsContainer">
+                </div>
+            <p>
+                <input type="number" id="postIdInput" placeholder="Enter Post ID">
+                <button id="getLikesButton">Get Likes</button>
+                <span id="likesCount"></span>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
